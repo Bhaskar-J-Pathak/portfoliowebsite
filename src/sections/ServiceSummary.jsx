@@ -48,7 +48,7 @@ const ServiceSummary = () => {
       </div>
       <div
         id="title-service-3"
-        className="flex items-center justify-center gap-3 -translate-x-48"
+        className="flex items-center justify-center gap-3 -translate-x-12 sm:-translate-x-48"
       >
         <p>APIs</p>
         <div className="w-10 h-1 md:w-32 bg-gold" />
@@ -56,7 +56,7 @@ const ServiceSummary = () => {
         <div className="w-10 h-1 md:w-32 bg-gold" />
         <p>Scalability</p>
       </div>
-      <div id="title-service-4" className="translate-x-48">
+      <div id="title-service-4" className="translate-x-12 sm:translate-x-48">
         <p>Interactive UIs</p>
       </div>
     </section>
