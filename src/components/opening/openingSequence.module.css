@@ -1,0 +1,40 @@
+.sequence {
+  --opening-progress: 0;
+  --hero-scale: 1;
+  --hero-blur: 0px;
+  --hero-opacity: 1;
+  --hero-radius: 0px;
+  --shadow-alpha: 0;
+  --frame-y: 9vh;
+  --frame-v-inset: 8%;
+  --frame-h-inset: 3.5%;
+  --frame-radius: 42px;
+  position: relative;
+  background: #f2f1ed;
+}
+
+.heroLayer {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.heroLayer > * {
+  transform: scale(var(--hero-scale));
+  transform-origin: 50% 50%;
+  filter: blur(var(--hero-blur));
+  opacity: var(--hero-opacity);
+  transition: border-radius .2s linear;
+  border-radius: var(--hero-radius);
+}
+
+.workLayer {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroLayer > * { transform: none; filter: none; opacity: 1; border-radius: 0; }
+}

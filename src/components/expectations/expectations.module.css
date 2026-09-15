@@ -1,0 +1,200 @@
+.expectations {
+  min-height: 112svh;
+  padding-top: 12svh;
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
+  background: #1c1920;
+}
+
+.sticky {
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+  color: #f4f2e8;
+  background: #1c1920;
+}
+
+.intro {
+  position: absolute;
+  top: 9vh;
+  left: 4vw;
+  z-index: 20;
+}
+
+.intro h2 {
+  max-width: 10.5em;
+  margin: 0;
+  font-size: clamp(2.5rem, 4.1vw, 5.1rem);
+  font-weight: 510;
+  letter-spacing: -.06em;
+  line-height: .91;
+}
+
+.intro h2 em {
+  display: block;
+  margin: .08em 0 0 1.6em;
+  color: #f4f2e8;
+  font-family: "Fraunces Variable", serif;
+  font-size: .82em;
+  font-weight: 390;
+  letter-spacing: -.035em;
+}
+
+.deck {
+  height: 46vh;
+  position: absolute;
+  right: 4vw;
+  bottom: 15vh;
+  left: 4vw;
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  --card-opacity: 0;
+  --card-y: 110%;
+  min-width: 0;
+  flex: 1 1 0;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 18px;
+  border: 1px solid rgba(244, 242, 232, .14);
+  border-radius: 12px;
+  outline: none;
+  color: #f4f2e8;
+  background: #262529;
+  opacity: var(--card-opacity);
+  transform: translateY(var(--card-y));
+  transition:
+    flex-grow .65s cubic-bezier(.16, .8, .2, 1),
+    color .55s ease,
+    background-color .55s ease,
+    box-shadow .55s ease;
+  will-change: transform, opacity;
+}
+
+.card > span {
+  display: block;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .08em;
+}
+
+.card h3 {
+  margin: 2.2vh 0 0;
+  font-size: clamp(1.25rem, 1.72vw, 2.15rem);
+  font-weight: 510;
+  letter-spacing: -.055em;
+  line-height: .98;
+}
+
+.card p {
+  max-width: 15em;
+  margin: 18px 0 0;
+  font-size: 11px;
+  letter-spacing: -.02em;
+  line-height: 1.25;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .35s ease .08s, transform .45s cubic-bezier(.16, .8, .2, 1) .08s;
+}
+
+.card strong {
+  position: absolute;
+  right: -0.08em;
+  bottom: -.22em;
+  color: transparent;
+  font-family: "Fraunces Variable", serif;
+  font-size: clamp(8rem, 12vw, 15rem);
+  font-weight: 390;
+  line-height: .8;
+  -webkit-text-stroke: 1px rgba(244, 242, 232, .34);
+  opacity: .55;
+  transform: rotate(5deg) translateY(14%);
+  transition: color .55s ease, opacity .55s ease, transform .65s cubic-bezier(.16, .8, .2, 1);
+  pointer-events: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  flex-grow: 1.46;
+  color: #1c1920;
+  background: #f4f2e8;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .22);
+}
+
+.card:hover p,
+.card:focus-visible p { opacity: .72; transform: translateY(0); }
+
+.card:hover strong,
+.card:focus-visible strong {
+  color: #b8b7b2;
+  opacity: .95;
+  transform: rotate(-2deg) translateY(2%);
+  -webkit-text-stroke-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .expectations { min-height: 108svh; padding-top: 8svh; }
+  .intro { top: 7vh; left: 18px; }
+  .intro h2 { font-size: clamp(2.5rem, 11vw, 4.5rem); }
+  .intro h2 em { margin-left: .55em; }
+  .deck {
+    height: 62vh;
+    right: 18px;
+    bottom: 12vh;
+    left: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .card { padding: 12px; border-radius: 9px; }
+  .card h3 { margin-top: 10px; font-size: clamp(1.05rem, 4.8vw, 1.55rem); }
+  .card p { margin-top: 9px; font-size: 9px; }
+  .card strong { font-size: clamp(6rem, 27vw, 10rem); }
+}
+
+@media (max-width: 600px) {
+  .expectations {
+    min-height: auto;
+    padding: 88px 14px 110px;
+    overflow: visible;
+  }
+  .sticky { min-height: 0; overflow: visible; }
+  .intro { position: relative; top: auto; left: auto; }
+  .intro h2 { max-width: 9em; font-size: clamp(2.7rem, 12vw, 4rem); }
+  .intro h2 em { margin: .1em 0 0 .35em; }
+  .deck {
+    height: auto;
+    position: relative;
+    inset: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 10px;
+    margin-top: 52px;
+  }
+  .card { min-height: 190px; padding: 16px; border-radius: 10px; }
+  .card > span { font-size: 11px; }
+  .card h3 { max-width: 11em; margin-top: 18px; font-size: clamp(1.55rem, 7vw, 2rem); }
+  .card p { max-width: 22em; margin-top: 14px; font-size: 13px; line-height: 1.4; }
+  .card strong { font-size: clamp(8rem, 48vw, 12rem); }
+}
+
+@media (hover: none) {
+  .card p { opacity: .62; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expectations { min-height: 108svh; }
+  .sticky { min-height: 100svh; position: relative; border-radius: 0; }
+  .card { opacity: 1; transform: none; transition: none; }
+  .card p { opacity: .62; transform: none; transition: none; }
+  .card strong { transition: none; }
+}
+
+@media (max-width: 600px) and (prefers-reduced-motion: reduce) {
+  .expectations { min-height: auto; }
+}

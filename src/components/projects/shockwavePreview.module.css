@@ -1,0 +1,19 @@
+.preview,
+.fallback,
+.canvas { width: 100%; height: 100%; }
+
+.preview { position: relative; overflow: hidden; cursor: crosshair; }
+.fallback, .canvas { position: absolute; inset: 0; }
+
+.fallback {
+  background-position: center;
+  background-size: cover;
+  transition: color .5s ease, background .7s ease;
+}
+
+.canvas { display: block; opacity: 0; transition: opacity .35s ease; }
+.ready { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas { display: none; }
+}
