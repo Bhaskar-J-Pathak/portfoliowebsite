@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://bhaskarjyotipathak.in",
-      lastModified: new Date(),
+      lastModified: "2026-09-21",
       changeFrequency: "monthly",
       priority: 1,
       images: [

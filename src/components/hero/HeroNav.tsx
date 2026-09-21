@@ -11,7 +11,7 @@ export function HeroNav() {
         <br />
         India, working globally
       </p>
-      <a className={styles.menu} href="mailto:bhaskarjyotipathak8@gmail.com">
+      <a className={styles.menu} href="mailto:hello@bhaskarjyotipathak.in">
         Let&apos;s talk <span>↗</span>
       </a>
     </header>

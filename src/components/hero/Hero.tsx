@@ -5,13 +5,13 @@ import styles from "./hero.module.css";
 
 export function Hero() {
   return (
-    <main className={styles.hero} id="top">
+    <section className={styles.hero} id="top" aria-labelledby="hero-title">
       <div className={styles.container}>
         <HeroNav />
         <HeroStatement />
         <HeroMeta />
       </div>
       <div className={styles.texture} aria-hidden="true" />
-    </main>
+    </section>
   );
 }

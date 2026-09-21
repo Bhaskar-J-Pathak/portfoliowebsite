@@ -16,8 +16,8 @@ export function HeroStatement() {
         </span>
       </h1>
       <p className={styles.summary}>
-        I shape brands and interfaces through visual direction, purposeful
-        interaction, and resilient frontend code.
+        Independent web designer and creative developer building distinctive,
+        fast and responsive websites for startups and growing businesses worldwide.
       </p>
     </section>
   );

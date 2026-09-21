@@ -38,7 +38,7 @@ export function About() {
           <div className={styles.portraitFrame}>
             <Image
               src="/Bhaskar.webp"
-              alt="Bhaskar Pathak"
+              alt="Portrait of Bhaskar Pathak, web designer and creative developer"
               fill
               sizes="(max-width: 700px) 39vw, (max-width: 960px) 24vw, 290px"
             />

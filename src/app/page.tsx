@@ -10,7 +10,7 @@ import { ProjectIndex } from "@/components/projects/ProjectIndex";
 
 export default function Home() {
   return (
-    <>
+    <main id="main-content">
       <OpeningSequence
         hero={<Hero />}
         work={<ProjectIndex intro={<WorkIntro />} about={<About />} />}
@@ -21,6 +21,6 @@ export default function Home() {
         <Expectations />
         <ContactFooter />
       </div>
-    </>
+    </main>
   );
 }

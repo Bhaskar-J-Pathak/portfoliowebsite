@@ -67,7 +67,7 @@ export function ContactFooter() {
           <h2 id="contact-title">So, what should<br />we make?</h2>
 
           <nav className={styles.actions} aria-label="Contact and navigation">
-            <a href="mailto:bhaskarjyotipathak8@gmail.com">
+            <a href="mailto:hello@bhaskarjyotipathak.in">
               Send me an email <span aria-hidden="true">↗</span>
             </a>
             <a href="#work">

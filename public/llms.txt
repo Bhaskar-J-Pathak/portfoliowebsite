@@ -1,0 +1,42 @@
+# Bhaskar Pathak
+
+> Bhaskar Pathak is an independent web designer and creative developer based in India and working with clients worldwide.
+
+Canonical website: https://bhaskarjyotipathak.in
+Contact: hello@bhaskarjyotipathak.in
+GitHub: https://github.com/Bhaskar-J-Pathak
+
+## What Bhaskar does
+
+- Custom web design for startups and growing businesses
+- Creative frontend development with Next.js
+- Product and interface design
+- Art direction and visual identity
+- Motion and interaction design
+- Responsive website development
+
+Bhaskar combines visual direction, purposeful interaction and resilient frontend code. His work focuses on distinctive websites that remain fast, clear and usable across devices.
+
+## Selected work
+
+- Rajdhany Realtors, 2025: brand direction and web development
+- Xvault Studio, 2025: product design and creative development
+- Spylt, 2025: brand direction and creative development
+- Lucas Danielsson, 2025: creative development and 3D interaction
+- Previous Portfolio, 2024: portfolio design and creative development
+
+## Working style
+
+- Clarity before decoration
+- Motion with a reason
+- Code that protects the original design idea
+- Strategy before spectacle
+- Strong typography and purposeful interaction
+
+## Important URLs
+
+- Portfolio: https://bhaskarjyotipathak.in
+- Selected work: https://bhaskarjyotipathak.in/#work
+- About: https://bhaskarjyotipathak.in/#about
+- Contact: https://bhaskarjyotipathak.in/#contact
+- Sitemap: https://bhaskarjyotipathak.in/sitemap.xml
