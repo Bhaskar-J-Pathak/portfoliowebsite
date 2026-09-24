@@ -6,18 +6,16 @@ export function HeroStatement() {
     <section className={styles.statement} aria-labelledby="hero-title">
       <p className={styles.index}>01 / Introduction</p>
       <h1 id="hero-title">
-        <span className={styles.line}>Building digital</span>
-        <span className={`${styles.line} ${styles.offset}`}>
-          experiences that
-        </span>
-        <span className={`${styles.line} ${styles.intentional}`}>
-          feel <LivingWord />
+        <span className={styles.line}>Websites that make</span>
+        <span className={styles.line}>the work clear and</span>
+        <span className={styles.line}>
+          the next step <LivingWord word="obvious" />
           <span className={styles.dot}>.</span>
         </span>
       </h1>
       <p className={styles.summary}>
-        Independent web designer and creative developer building distinctive,
-        fast and responsive websites for startups and growing businesses worldwide.
+        I design and build them for design-led small businesses, working directly
+        with owners in the US, UK and India.
       </p>
     </section>
   );

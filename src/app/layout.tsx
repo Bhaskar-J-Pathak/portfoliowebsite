@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SmoothScroll } from "@/components/scroll/SmoothScroll";
+import { projects } from "@/data/projects";
 import "./globals.css";
 
 const siteUrl = "https://bhaskarjyotipathak.in";
@@ -77,7 +78,7 @@ const structuredData = {
       url: siteUrl,
       name: title,
       description,
-      dateModified: "2026-09-21",
+      dateModified: "2026-09-24",
       inLanguage: "en",
       isPartOf: { "@id": `${siteUrl}/#website` },
       mainEntity: { "@id": `${siteUrl}/#person` },
@@ -168,24 +169,18 @@ const structuredData = {
       "@type": "ItemList",
       "@id": `${siteUrl}/#selected-work`,
       name: "Selected web design and development projects",
-      numberOfItems: 5,
-      itemListElement: [
-        ["Rajdhany Realtors", "Brand direction and web development", "2025", "rajdhany.webp"],
-        ["Xvault Studio", "Product design and creative development", "2025", "xvault.webp"],
-        ["Spylt", "Brand direction and creative development", "2025", "spylt.webp"],
-        ["Lucas Danielsson", "Creative development and 3D interaction", "2025", "lucas.webp"],
-        ["Previous Portfolio", "Portfolio design and creative development", "2024", "previous-portfolio.webp"],
-      ].map(([name, projectDescription, year, image], index) => ({
+      numberOfItems: projects.length,
+      itemListElement: projects.map((project, index) => ({
         "@type": "ListItem",
         position: index + 1,
         item: {
           "@type": "CreativeWork",
-          name,
-          description: projectDescription,
-          dateCreated: year,
-          image: `${siteUrl}/images/projects/${image}`,
-          url: `${siteUrl}/#work`,
-          creator: { "@id": `${siteUrl}/#person` },
+          name: project.title,
+          description: project.summary,
+          dateCreated: project.year,
+          image: siteUrl + project.desktopImage,
+          url: siteUrl + "/work/" + project.slug,
+          creator: { "@id": siteUrl + "/#person" },
         },
       })),
     },

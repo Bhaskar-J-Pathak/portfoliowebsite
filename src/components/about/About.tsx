@@ -9,11 +9,11 @@ export function About() {
       aria-labelledby="about-title"
     >
       <div className={styles.layout}>
-        <p className={styles.eyebrow}>A little more human</p>
+        <p className={styles.eyebrow}>Working together</p>
 
         <h2 className={styles.headline} id="about-title">
-          Curious by default. Particular about details.
-          <em> Usually working on more than one kind of story.</em>
+          I design and build the site, and work directly with the person responsible for the business.
+          <em> Clear communication, one person from direction to launch.</em>
         </h2>
 
         <dl className={styles.facts}>

@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./hero.module.css";
 
-const letters = "intentional".split("");
 const WAVE_DURATION = 1_150;
 
-export function LivingWord() {
+export function LivingWord({ word = "obvious" }: { word?: string }) {
+  const letters = word.split("");
   const [isWaving, setIsWaving] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -26,7 +26,7 @@ export function LivingWord() {
   return (
     <span
       className={`${styles.livingWord} ${isWaving ? styles.isWaving : ""}`}
-      aria-label="intentional"
+      aria-label={word}
       onPointerEnter={playWave}
     >
       {letters.map((letter, index) => (

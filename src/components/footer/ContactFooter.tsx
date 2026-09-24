@@ -64,17 +64,14 @@ export function ContactFooter() {
     <footer className={styles.footer} id="contact" aria-labelledby="contact-title">
       <div className={styles.inner}>
         <div className={styles.contact}>
-          <h2 id="contact-title">So, what should<br />we make?</h2>
+          <h2 id="contact-title">Send me your<br />current site.</h2>
 
           <nav className={styles.actions} aria-label="Contact and navigation">
-            <a href="mailto:hello@bhaskarjyotipathak.in">
-              Send me an email <span aria-hidden="true">↗</span>
+            <a href="mailto:hello@bhaskarjyotipathak.in?subject=My%20current%20website&body=Hi%20Bhaskar%2C%0A%0AHere%20is%20my%20current%20site%3A%20">
+              Email your site <span aria-hidden="true">↗</span>
             </a>
             <a href="#work">
               See selected work <span aria-hidden="true">↓</span>
-            </a>
-            <a href="#top">
-              Start from the top <span aria-hidden="true">↟</span>
             </a>
           </nav>
         </div>
@@ -83,7 +80,7 @@ export function ContactFooter() {
 
         <div className={styles.bottom}>
           <p>Bhaskar Pathak</p>
-          <p>India, working globally</p>
+          <p>India / US and UK call hours</p>
           <p>© 2026</p>
         </div>
       </div>

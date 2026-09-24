@@ -2,21 +2,10 @@
 
 import type { CSSProperties, ReactNode } from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ShockwavePreview, type PreviewSlide } from "./ShockwavePreview";
+import Link from "next/link";
+import { projects } from "@/data/projects";
+import { ShockwavePreview } from "./ShockwavePreview";
 import styles from "./projectIndex.module.css";
-
-type Project = PreviewSlide & {
-  year: string;
-  disciplines: string[];
-};
-
-const projects: Project[] = [
-  { number: "01", title: "Rajdhany Realtors", year: "2025", disciplines: ["Brand direction", "Web development"], background: "#f4f3f0", ink: "#171717", accent: "#777773", image: "/images/projects/rajdhany.webp" },
-  { number: "02", title: "Xvault Studio", year: "2025", disciplines: ["Product design", "Creative development"], background: "#ecebe7", ink: "#171717", accent: "#686866", image: "/images/projects/xvault.webp" },
-  { number: "03", title: "Spylt", year: "2025", disciplines: ["Brand direction", "Creative development"], background: "#e7e6e2", ink: "#171717", accent: "#858581", image: "/images/projects/spylt.webp" },
-  { number: "04", title: "Lucas Danielsson", year: "2025", disciplines: ["Creative development", "3D interaction"], background: "#171717", ink: "#f4f2e8", accent: "#a5a5a0", image: "/images/projects/lucas.webp" },
-  { number: "05", title: "Previous Portfolio", year: "2024", disciplines: ["Portfolio design", "Creative development"], background: "#e5e5e1", ink: "#111111", accent: "#747471", image: "/images/projects/previous-portfolio.webp" },
-];
 
 type ProjectIndexProps = {
   intro: ReactNode;
@@ -99,14 +88,19 @@ export function ProjectIndex({ intro, about }: ProjectIndexProps) {
 
             <div className={styles.titles} aria-live="polite">
               {projects.map((item, index) => (
-                <h2 className={index === active ? styles.titleActive : ""} key={item.title}>{item.title}</h2>
+                <h2 className={index === active ? styles.titleActive : ""} key={item.title}>
+                  <Link href={"/work/" + item.slug}>{item.title}</Link>
+                </h2>
               ))}
             </div>
 
             <div className={styles.details}>
               <div className={styles.detailStack} key={project.title}>
-                {project.disciplines.map((discipline) => <p key={discipline}>{discipline}</p>)}
-                <p>{project.year}</p>
+                <p className={styles.projectType}>{project.clientType}</p>
+                <p className={styles.projectSummary}>{project.summary}</p>
+                <Link className={styles.caseLink} href={"/work/" + project.slug}>
+                  View case study <span>↗</span>
+                </Link>
               </div>
             </div>
 

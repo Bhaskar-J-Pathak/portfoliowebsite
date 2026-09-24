@@ -1,7 +1,7 @@
 .capabilities {
   --active-capability: 0;
   --section-gap: clamp(64px, 9svh, 112px);
-  min-height: 430svh;
+  min-height: 340svh;
   margin-top: var(--section-gap);
   position: relative;
   z-index: 4;
@@ -236,7 +236,7 @@
 @media (max-width: 800px) {
   .capabilities {
     --section-gap: clamp(44px, 7svh, 72px);
-    min-height: 390svh;
+    min-height: 310svh;
   }
   .stage { height: 100svh; }
   .copy { width: 90vw; top: 27%; left: 5vw; }

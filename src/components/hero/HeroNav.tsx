@@ -9,9 +9,9 @@ export function HeroNav() {
       <p className={styles.role}>
         Designer + developer
         <br />
-        India, working globally
+        US, UK and India
       </p>
-      <a className={styles.menu} href="mailto:hello@bhaskarjyotipathak.in">
+      <a className={styles.menu} href="mailto:hello@bhaskarjyotipathak.in?subject=Website%20project">
         Let&apos;s talk <span>↗</span>
       </a>
     </header>

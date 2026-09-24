@@ -7,31 +7,24 @@ import styles from "./capabilities.module.css";
 const capabilities = [
   {
     number: "01",
-    lead: "Product",
-    accent: "and Web Design",
+    lead: "New site",
+    accent: "for a service brand",
     description:
-      "Interfaces shaped around hierarchy, flow and the moment a person decides to stay.",
+      "A focused website for a studio, consultant or local business that needs to look established and make enquiry easy.",
   },
   {
     number: "02",
-    lead: "Art Direction",
-    accent: "and Identity",
+    lead: "Focused",
+    accent: "website redesign",
     description:
-      "Visual systems with a clear point of view, built to stay recognizable across every surface.",
+      "A clearer structure and stronger visual direction when the current site hides the quality of the work, especially on mobile.",
   },
   {
     number: "03",
-    lead: "Motion",
-    accent: "and Interaction",
+    lead: "Design",
+    accent: "brought to life",
     description:
-      "Movement that explains, rewards and gives digital work a pulse without getting in its way.",
-  },
-  {
-    number: "04",
-    lead: "Creative",
-    accent: "Development",
-    description:
-      "Frontend builds where the implementation protects the original idea and every intentional detail.",
+      "A responsive build from an existing design, with the type, motion and interaction details protected through implementation.",
   },
 ] as const;
 

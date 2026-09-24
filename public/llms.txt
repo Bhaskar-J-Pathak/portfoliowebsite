@@ -1,37 +1,32 @@
 # Bhaskar Pathak
 
-> Bhaskar Pathak is an independent web designer and creative developer based in India and working with clients worldwide.
+> Bhaskar Pathak designs and builds distinctive websites for design-led small businesses, working directly with owners in the US, UK and India.
 
 Canonical website: https://bhaskarjyotipathak.in
 Contact: hello@bhaskarjyotipathak.in
 GitHub: https://github.com/Bhaskar-J-Pathak
 
-## What Bhaskar does
+## Services
 
-- Custom web design for startups and growing businesses
-- Creative frontend development with Next.js
-- Product and interface design
-- Art direction and visual identity
-- Motion and interaction design
-- Responsive website development
-
-Bhaskar combines visual direction, purposeful interaction and resilient frontend code. His work focuses on distinctive websites that remain fast, clear and usable across devices.
+- New websites for studios, consultants and service businesses
+- Focused redesigns when a strong business is being undersold by its current website
+- Responsive development from an existing design
+- Visual direction, interaction design and frontend development
 
 ## Selected work
 
-- Rajdhany Realtors, 2025: brand direction and web development
-- Xvault Studio, 2025: product design and creative development
-- Spylt, 2025: brand direction and creative development
-- Lucas Danielsson, 2025: creative development and 3D interaction
-- Previous Portfolio, 2024: portfolio design and creative development
+- Rajdhany Realtors: client work for a luxury real estate business
+  Case study: https://bhaskarjyotipathak.in/work/rajdhany-realtors
+- Xvault Studio: founder-led writing software product
+  Case study: https://bhaskarjyotipathak.in/work/xvault-studio
+- Spylt: independent Awwwards-style CPG website study, not commissioned by or affiliated with SPYLT
+  Case study: https://bhaskarjyotipathak.in/work/spylt-study
+- Lucas Danielsson: client portfolio for a Swedish magician
+  Case study: https://bhaskarjyotipathak.in/work/lucas-danielsson
 
-## Working style
+## Working relationship
 
-- Clarity before decoration
-- Motion with a reason
-- Code that protects the original design idea
-- Strategy before spectacle
-- Strong typography and purposeful interaction
+Bhaskar handles website direction, design and development directly. He is based in India and works remotely with US and UK call hours. He has more than four years of experience.
 
 ## Important URLs
 

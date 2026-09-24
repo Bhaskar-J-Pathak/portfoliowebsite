@@ -8,7 +8,7 @@ export function HeroMeta() {
         <b>↓</b>
       </a>
       <p className={styles.availability}>
-        <i /> Available for select projects
+        <i /> Booking a small number of website projects
       </p>
       <p className={styles.year}>© 2026</p>
     </div>
